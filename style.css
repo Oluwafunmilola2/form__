@@ -1,0 +1,180 @@
+/* variables */
+:root {
+--color-primary: #5dc4f0;
+--color-secondary: #e456b9;
+--color-tertiary: #ca2020;
+
+--color-light: #3a0073;
+--color-dark: #000000;
+--color-gray: #a5a5a5;
+--color-accent: #fff;
+
+--font-main: "Poppins", sans-serif;
+}
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    font-family: var(--font-main);
+    color: var(--color-gray);
+    font-size: 12px;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+h2{
+    font-size: 20px;
+    color: var(--color-dark);
+}
+
+input{
+    border: none;
+    outline: none;
+    margin: 10px 0 12px 12px;
+    background-color: transparent;
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 8px 20px;
+    margin-bottom: 30px;
+    width: 250px;
+    transition: 0.3s ease;
+}
+
+
+/* section */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrapper{
+    margin: 30px 0;
+    height: 540px;
+    border-radius: 8px;
+    padding: 30px 35px 0px;
+    background-color: var(--color-accent);
+}
+
+.contact-form{
+    margin-top: 15px;
+}
+
+.contact-form p{
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+}
+
+.contact-form p,
+.form-group label,
+.signup-btn p:last-child
+{
+    color: var(--color-dark);
+}
+
+.form-group label, 
+.input-icon i{
+    margin-left: 13px;
+}
+
+.input-icon{
+    border-bottom: 1.7px solid var(--color-gray);
+    width: 250px;
+    align-items: center;
+}
+
+.input-password{
+    position: relative;
+}
+
+.password{
+    margin-top: 10px;
+}
+
+.cta-btns{
+    margin-top: 45px;
+}
+
+.cta-btns button {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-accent);
+}
+
+.cta-btns button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.cta-btns, .signup-btn, h2{
+    text-align: center;
+}
+
+.logos{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 18px 0 80px;
+}
+
+.fa-brands{
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--color-accent);
+}
+
+.fa-facebook-f{
+    background-color: var(--color-light);
+}
+
+.fa-twitter{
+    background-color: var(--color-primary);
+
+}
+
+.fa-google{
+    background-color: var(--color-tertiary);
+
+}
+
+.signup-btn p:last-child{
+margin-top: 10px;
+}
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 480px) {
+body {
+    font-size: 11px;
+}
+
+.form-wrapper {
+    width: 90%;
+    padding: 18px;
+}
+
+.input-icon,
+button {
+    width: 100%;
+}
+}
+
+
+@media (max-width: 768px) {
+body {
+    font-size: 12px;
+}
+}
+
+
