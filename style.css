@@ -28,6 +28,11 @@ body {
     min-height: 100vh;
 }
 
+a{
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
 h2{
     font-size: 20px;
     color: var(--color-dark);
@@ -77,9 +82,7 @@ button {
 }
 
 .contact-form p,
-.form-group label,
-.signup-btn p:last-child
-{
+.form-group label{
     color: var(--color-dark);
 }
 

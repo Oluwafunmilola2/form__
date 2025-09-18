@@ -1,0 +1,51 @@
+input{
+    margin: 0px 0 0px 0px;
+    padding: 4px;
+    width: 100%;
+}
+
+button{
+    margin-top: 25px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-accent);
+}
+
+.form-wrapper{
+    padding: 30px 25px 0px;
+
+}
+
+
+/* .input-icon,
+.form-group {
+    border: none !important;
+    background: transparent !important;
+} */
+
+.form-group label{
+    margin-left: 0;
+}
+
+.input-control{
+    margin-top: 0px;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 14px;   
+    margin-top: 4px;
+}
+
+.input-control.success input {
+    border: 2px solid #09c372;
+
+}
+
+.input-control.error input {
+    border: 2px solid #ff3860; 
+}
+
+
+
+
